@@ -276,16 +276,16 @@ h2 {
   z-index: 10;
 }
 
-  .conteudo span {
+ .conteudo span {
   color: #ff0000;
   font-weight: 900;
-  font-size: 12px;
-  letter-spacing: 2px;
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 8px;
-  background: rgba(0,0,0,0.55);
-  text-shadow: 0 0 10px rgba(0,0,0,1);
+  font-size: 14px;
+  letter-spacing: 3px;
+
+  text-shadow:
+    0 0 8px rgba(0,0,0,1),
+    0 0 16px rgba(0,0,0,1),
+    0 0 24px rgba(0,0,0,0.9);
 }
 
   .conteudo h1 {
