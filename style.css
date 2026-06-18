@@ -369,4 +369,15 @@ h2 {
     height: 150px;
     object-fit: cover;
   }
+  .botoes-fixos-hero {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 25px;
+  z-index: 20;
+}
+
+.botoes-fixos-hero .btn {
+  margin-top: 10px;
+}
 }
