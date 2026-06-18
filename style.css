@@ -271,7 +271,7 @@ h2 {
     min-height: 100vh;
     padding: 24px 20px 45px;
     background:
-      linear-gradient(90deg, rgba(0,0,0,0.96), rgba(0,0,0,0.58)),
+      linear-gradient(90deg, rgba(0,0,0,0.00), rgba(0,0,0,0.00)),
       url("hero-cliente.png");
     background-size: cover;
     background-position: 100% 150%;
