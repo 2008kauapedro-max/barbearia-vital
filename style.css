@@ -277,13 +277,13 @@ h2 {
 }
 
 .conteudo span {
-  color: #ff0000;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 3px;
-  display: inline;
+  color: #ff0000 !important;
+  font-size: 20px !important;
 
-  box-shadow: 0 0 20px rgba(0,0,0,0.9);
+  text-shadow:
+    0 0 20px #000000,
+    0 0 40px #000000,
+    0 0 60px #000000 !important;
 }
 
   .conteudo h1 {
