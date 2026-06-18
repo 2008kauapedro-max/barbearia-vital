@@ -277,10 +277,16 @@ h2 {
 }
 
   .conteudo span {
-    font-size: 12px;
-    letter-spacing: 2px;
-     text-shadow: 0 0 10px rgba(0,0,0,0.9);
-  }
+  color: #ff0000;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.55);
+  text-shadow: 0 0 10px rgba(0,0,0,1);
+}
 
   .conteudo h1 {
     font-size: 28px;
