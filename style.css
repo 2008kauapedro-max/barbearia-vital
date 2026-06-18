@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050505;
+  color: #fff;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 28px 22px 45px;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.72) 48%, rgba(0,0,0,0.15) 100%),
+    url("hero-cliente.png");
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.topo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+.conteudo {
+  max-width: 430px;
+  margin-bottom: 40px;
+}
+
+.conteudo span {
+  color: #df0000;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.conteudo h1 {
+  font-size: 48px;
+  line-height: 0.98;
+  margin: 18px 0;
+  font-weight: 900;
+}
+
+.conteudo h1 strong {
+  color: #df0000;
+}
+
+.conteudo p {
+  color: #ddd;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.atalhos {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.atalhos a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #df0000;
+  border-radius: 12px;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.35);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 17px;
+  border-radius: 14px;
+  border: 1px solid #df0000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.zap {
+  background: linear-gradient(135deg, #df0000, #9f1515);
+  box-shadow: 0 0 24px rgba(223,0,0,0.35);
+}
+
+.servicos,
+.galeria,
+.sobre,
+.unidades {
+  padding: 48px 22px;
+  text-align: center;
+}
+
+h2 {
+  color: #df0000;
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.grid div {
+  background: linear-gradient(180deg, #171717, #0b0b0b);
+  border: 1px solid #292929;
+  border-radius: 18px;
+  padding: 20px 12px;
+  height: 190px;
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.grid i,
+.grid img {
+  color: #df0000;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  font-size: 44px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.grid h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  min-height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid p {
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.4;
+  min-height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeria {
+  background: #0b0b0b;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.fotos img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.sobre {
+  background: #080808;
+}
+
+.sobre p {
+  max-width: 430px;
+  margin: 0 auto;
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.unidades-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.unidade-card {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #151515;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.unidade-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.unidade-card div {
+  padding: 16px;
+}
+
+.unidade-card h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.unidade-card i {
+  color: #df0000;
+  margin-right: 6px;
+}
+
+.unidade-card p {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 58px;
+  height: 58px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 30px;
+  box-shadow: 0 0 25px rgba(37,211,102,0.5);
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    padding: 24px 20px 45px;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.92), rgba(0,0,0,0.45)),
+      url("hero-cliente.png");
+    background-size: cover;
+    background-position: 87% 150%;
+  }
+
+  .topo {
+    margin-bottom: 210px;
+  }
+
+  .logo {
+    width: 95px;
+  }
+
+  .conteudo {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .conteudo h1 {
+    font-size: 42px;
+  }
+
+  .conteudo p {
+    font-size: 15px;
+  }
+
+  .atalhos {
+    justify-content: center;
+    margin: 18px 0;
+  }
+
+  .atalhos a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .servicos,
+  .galeria,
+  .sobre,
+  .unidades {
+    padding: 42px 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .grid div {
+    height: 180px;
+    min-height: 180px;
+    padding: 18px 10px;
+  }
+
+  .grid i,
+  .grid img {
+    width: 48px;
+    height: 48px;
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  .grid h3 {
+    font-size: 14px;
+    margin-bottom: 7px;
+    min-height: 18px;
+  }
+
+  .grid p {
+    font-size: 12px;
+    min-height: 36px;
+  }
+
+  .fotos {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .fotos img {
+    height: 150px;
+    object-fit: cover;
+  }
+}
