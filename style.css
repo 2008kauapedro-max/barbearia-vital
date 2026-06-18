@@ -299,16 +299,15 @@ h2 {
 
   .atalhos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 16px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
     width: 100%;
   }
 
   .atalhos a {
     text-align: center;
-    padding: 11px 8px;
-    font-size: 13px;
+    padding: 10px 4px;
+    font-size: 11px;
   }
 
   .btn {
