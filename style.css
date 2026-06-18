@@ -269,7 +269,7 @@ h2 {
       linear-gradient(90deg, rgba(0,0,0,0.15), rgba(0,0,0,0.10)),
       url("hero-cliente.png");
     background-size: 135%;
-    background-position: 50% 100%;
+    background-position: 50% 50%;
     justify-content: flex-end;
   }
 
