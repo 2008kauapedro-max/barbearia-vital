@@ -276,18 +276,14 @@ h2 {
   z-index: 10;
 }
 
- .conteudo span {
-  color: #ff0000;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 3px;
-  display: block;
-  white-space: nowrap;
+.conteudo span {
+  color: #ff0000 !important;
+  font-size: 20px !important;
 
-  filter:
-    drop-shadow(0 6px 10px #000)
-    drop-shadow(0 12px 22px #000)
-    drop-shadow(0 18px 35px #000);
+  text-shadow:
+    0 0 20px #00ff00,
+    0 0 40px #00ff00,
+    0 0 60px #00ff00 !important;
 }
 
   .conteudo h1 {
