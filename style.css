@@ -396,7 +396,7 @@ h2 {
   .conteudo {
     max-width: 100%;
     margin-bottom: 0;
-    transform: translateY(25px);
+    transform: translateY(80px);
   }
 
   .conteudo span {
