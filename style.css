@@ -262,17 +262,20 @@ h2 {
 
 /* CELULAR */
 @media (max-width: 768px) {
-  .hero {
-    min-height: 100vh;
-    padding: 24px 20px 35px;
-    background:
-      linear-gradient(90deg, rgba(0,0,0,0.15), rgba(0,0,0,0.10)),
-      url("hero-cliente.png");
-    background-size: 135%;
-    background-position: 60% 30%;
-    justify-content: flex-end;
-  }
+ .hero {
+  min-height: 100vh;
+  padding: 24px 20px 35px;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.15), rgba(0,0,0,0.10)),
+    url("hero-cliente.png");
 
+  background-size: 135%;
+  background-position: 50% 100%;
+  justify-content: flex-end;
+
+  overflow: visible;
+  margin-bottom: 180px;
+}
   .topo {
     margin-bottom: 0;
   }
@@ -281,11 +284,13 @@ h2 {
     width: 95px;
   }
 
-  .conteudo {
-    max-width: 100%;
-    margin-bottom: 0;
-    transform: translateY(65px);
-  }
+ .conteudo {
+  max-width: 100%;
+  margin-bottom: 0;
+  transform: translateY(80px);
+  position: relative;
+  z-index: 10;
+}
 
   .conteudo span {
     font-size: 12px;
@@ -369,15 +374,4 @@ h2 {
     height: 150px;
     object-fit: cover;
   }
-  .botoes-fixos-hero {
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: 25px;
-  z-index: 20;
-}
-
-.botoes-fixos-hero .btn {
-  margin-top: 10px;
-}
-}
+  
