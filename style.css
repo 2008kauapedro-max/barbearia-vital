@@ -360,15 +360,16 @@ h2 {
     object-fit: cover;
   }
 }@media (max-width: 768px) {
-  .hero {
-    min-height: 100vh;
-    padding: 24px 20px 45px;
-    background:
-      linear-gradient(90deg, rgba(0,0,0,0.92), rgba(0,0,0,0.45)),
-      url("hero-cliente.png");
-    background-size: cover;
-    background-position: 87% 150%;
-  }
+ .hero {
+  min-height: 100vh;
+  padding: 24px 20px 45px;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.96), rgba(0,0,0,0.58)),
+    url("hero-cliente.png");
+
+  background-size: 135%;
+  background-position: 120% 65%;
+}
 
   .topo {
     margin-bottom: 210px;
