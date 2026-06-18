@@ -265,7 +265,101 @@ h2 {
 }
 
 /* CELULAR */
+/* CELULAR */
 @media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    padding: 24px 20px 45px;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.96), rgba(0,0,0,0.58)),
+      url("hero-cliente.png");
+    background-size: cover;
+    background-position: 100% 150%;
+  }
+
+  .topo {
+    margin-bottom: 210px;
+  }
+
+  .logo {
+    width: 95px;
+  }
+
+  .conteudo {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .conteudo h1 {
+    font-size: 42px;
+  }
+
+  .conteudo p {
+    font-size: 15px;
+  }
+
+  .atalhos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 18px 0;
+    width: 100%;
+  }
+
+  .atalhos a {
+    text-align: center;
+    padding: 12px 8px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .servicos,
+  .galeria,
+  .sobre,
+  .unidades {
+    padding: 42px 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .grid div {
+    height: 180px;
+    min-height: 180px;
+    padding: 18px 10px;
+  }
+
+  .grid i,
+  .grid img {
+    width: 48px;
+    height: 48px;
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  .grid h3 {
+    font-size: 14px;
+    margin-bottom: 7px;
+    min-height: 18px;
+  }
+
+  .grid p {
+    font-size: 12px;
+    min-height: 36px;
+  }
+
+  .fotos {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .fotos img {
+    height: 150px;
+    object-fit: cover;
+  }
+}@media (max-width: 768px) {
   .hero {
     min-height: 100vh;
     padding: 24px 20px 45px;
