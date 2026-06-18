@@ -298,9 +298,10 @@ h2 {
   }
 
   .conteudo h1 {
-    font-size: 36px;
-    line-height: 0.95;
-    margin: 14px 0;
+    font-size: 28px;
+    line-height: 1.05;
+    margin: 18px 0 20px;
+    max-width: 100%;
   }
 
   .conteudo p {
