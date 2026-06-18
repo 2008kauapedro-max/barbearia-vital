@@ -327,7 +327,7 @@ h2 {
   .galeria,
   .sobre,
   .unidades {
-    padding: 42px 18px;
+    padding: 42px 18px 42px;
   }
 
   .grid {
