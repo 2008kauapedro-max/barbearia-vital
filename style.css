@@ -270,7 +270,7 @@ h2 {
     url("hero-cliente.png");
 
   background-size: 135%;
-  background-position: 50% 80%;
+  background-position: 50% 30%;
   justify-content: flex-end;
 
   overflow: visible;
@@ -374,4 +374,4 @@ h2 {
     height: 150px;
     object-fit: cover;
   }
-  
+}
