@@ -266,19 +266,22 @@ h2 {
 
 /* CELULAR */
 /* CELULAR */
+/* CELULAR */
 @media (max-width: 768px) {
   .hero {
     min-height: 100vh;
-    padding: 24px 20px 45px;
+    padding: 24px 20px 35px;
     background:
-      linear-gradient(90deg, rgba(0,0,0,0.00), rgba(0,0,0,0.00)),
+      linear-gradient(90deg, rgba(0,0,0,0.15), rgba(0,0,0,0.10)),
       url("hero-cliente.png");
-    background-size: 140;
-    background-position: 100% 220%;
+
+    background-size: 135%;
+    background-position: 50% 85%;
+    justify-content: flex-end;
   }
 
   .topo {
-    margin-bottom: 210px;
+    margin-bottom: 0;
   }
 
   .logo {
@@ -288,29 +291,43 @@ h2 {
   .conteudo {
     max-width: 100%;
     margin-bottom: 0;
+    transform: translateY(25px);
+  }
+
+  .conteudo span {
+    font-size: 12px;
+    letter-spacing: 2px;
   }
 
   .conteudo h1 {
-    font-size: 42px;
+    font-size: 38px;
+    line-height: 0.95;
+    margin: 14px 0;
   }
 
   .conteudo p {
     font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 16px;
   }
 
   .atalhos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    margin: 18px 0;
+    margin: 16px 0;
     width: 100%;
   }
 
   .atalhos a {
     text-align: center;
-    padding: 12px 8px;
-    font-size: 14px;
-    white-space: nowrap;
+    padding: 11px 8px;
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 15px;
+    margin-top: 12px;
   }
 
   .servicos,
@@ -342,12 +359,10 @@ h2 {
   .grid h3 {
     font-size: 14px;
     margin-bottom: 7px;
-    min-height: 18px;
   }
 
   .grid p {
     font-size: 12px;
-    min-height: 36px;
   }
 
   .fotos {
@@ -359,93 +374,64 @@ h2 {
     height: 150px;
     object-fit: cover;
   }
-}@media (max-width: 768px) {
- .hero {
-  min-height: 100vh;
-  padding: 24px 20px 45px;
-  background:
-    linear-gradient(90deg, rgba(0,0,0,0.00), rgba(0,0,0,0.00)),
-    url("hero-cliente.png");
-
-  background-size: 135%;
-  background-position: 50% 45%;
 }
+@media (max-width: 768px) {
 
-  .topo {
-    margin-bottom: 210px;
+  .hero {
+    min-height: 100vh;
+    padding: 24px 20px 35px;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.15), rgba(0,0,0,0.10)),
+      url("hero-cliente.png");
+
+    background-size: 135%;
+    background-position: 50% 85%;
+    justify-content: flex-end;
   }
 
-  .logo {
-    width: 95px;
+  .topo {
+    margin-bottom: 0;
   }
 
   .conteudo {
     max-width: 100%;
     margin-bottom: 0;
+    transform: translateY(25px);
+  }
+
+  .conteudo span {
+    font-size: 12px;
+    letter-spacing: 2px;
   }
 
   .conteudo h1 {
-    font-size: 42px;
+    font-size: 38px;
+    line-height: 0.95;
+    margin: 14px 0;
   }
 
   .conteudo p {
     font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 16px;
   }
 
   .atalhos {
-    justify-content: center;
-    margin: 18px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+    width: 100%;
   }
 
   .atalhos a {
-    font-size: 12px;
-    padding: 8px 10px;
+    text-align: center;
+    padding: 11px 8px;
+    font-size: 13px;
   }
 
-  .servicos,
-  .galeria,
-  .sobre,
-  .unidades {
-    padding: 42px 18px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .grid div {
-    height: 180px;
-    min-height: 180px;
-    padding: 18px 10px;
-  }
-
-  .grid i,
-  .grid img {
-    width: 48px;
-    height: 48px;
-    font-size: 42px;
-    margin-bottom: 10px;
-  }
-
-  .grid h3 {
-    font-size: 14px;
-    margin-bottom: 7px;
-    min-height: 18px;
-  }
-
-  .grid p {
-    font-size: 12px;
-    min-height: 36px;
-  }
-
-  .fotos {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .fotos img {
-    height: 150px;
-    object-fit: cover;
+  .btn {
+    padding: 15px;
+    margin-top: 12px;
   }
 }
