@@ -268,7 +268,7 @@ h2 {
       url("hero-cliente.png");
 
     background-size: cover;
-    background-position: center center;
+    background-position: 10% center;
     background-repeat: no-repeat;
 
     justify-content: flex-end;
