@@ -265,8 +265,8 @@ h2 {
     background:
       linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.08)),
       url("hero-cliente.png");
-    background-size: 120%;
-    background-position: center top;
+    background-size: 130%;
+    background-position: 50% top;
     justify-content: flex-end;
     overflow: visible;
     margin-bottom: 60px;
