@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: #050505;
+  background: #141414;
   color: #fff;
 }
 
@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
   padding: 28px 22px 45px;
   background:
-    linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.72) 48%, rgba(0,0,0,0.15) 100%),
+    linear-gradient(90deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.25) 48%, rgba(0,0,0,0.08) 100%),
     url("hero-cliente.png");
   background-size: cover;
   background-position: center right;
@@ -45,7 +45,7 @@ body {
 }
 
 .conteudo span {
-  color: #df0000;
+  color: #ff1f1f;
   font-weight: bold;
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -56,17 +56,19 @@ body {
   line-height: 0.98;
   margin: 18px 0;
   font-weight: 900;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.65);
 }
 
 .conteudo h1 strong {
-  color: #df0000;
+  color: #ff1f1f;
 }
 
 .conteudo p {
-  color: #ddd;
+  color: #f1f1f1;
   font-size: 17px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.7);
 }
 
 .atalhos {
@@ -80,12 +82,13 @@ body {
 .atalhos a {
   text-decoration: none;
   color: white;
-  border: 1px solid #df0000;
+  border: 1px solid #ff1f1f;
   border-radius: 12px;
   padding: 9px 12px;
   font-size: 13px;
   font-weight: bold;
-  background: rgba(0,0,0,0.35);
+  background: rgba(20,20,20,0.45);
+  backdrop-filter: blur(6px);
 }
 
 .btn {
@@ -94,7 +97,6 @@ body {
   text-align: center;
   padding: 17px;
   border-radius: 14px;
-  border: 1px solid #df0000;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -102,8 +104,18 @@ body {
 }
 
 .zap {
-  background: linear-gradient(135deg, #df0000, #9f1515);
-  box-shadow: 0 0 24px rgba(223,0,0,0.35);
+  background: linear-gradient(135deg, #a10909, #ee2424);
+  border: none;
+}
+
+.btn:not(.zap):not(.insta) {
+  background: #222222;
+  border: 1px solid #444444;
+}
+
+.insta {
+  background: linear-gradient(135deg,#960101,#470101);
+  border: none;
 }
 
 .servicos,
@@ -112,10 +124,20 @@ body {
 .unidades {
   padding: 48px 22px;
   text-align: center;
+  background: #151515;
+}
+
+.galeria,
+.unidades {
+  background: #181818;
+}
+
+.sobre {
+  background: #1c1c1c;
 }
 
 h2 {
-  color: #df0000;
+  color: #ff1f1f;
   font-size: 28px;
   margin-bottom: 24px;
   text-transform: uppercase;
@@ -128,8 +150,8 @@ h2 {
 }
 
 .grid div {
-  background: linear-gradient(180deg, #171717, #0b0b0b);
-  border: 1px solid #292929;
+  background: linear-gradient(180deg, #242424, #171717);
+  border: 1px solid #3a3a3a;
   border-radius: 18px;
   padding: 20px 12px;
   height: 190px;
@@ -144,7 +166,7 @@ h2 {
 
 .grid i,
 .grid img {
-  color: #df0000;
+  color: #ff1f1f;
   width: 52px;
   height: 52px;
   object-fit: contain;
@@ -163,17 +185,13 @@ h2 {
 }
 
 .grid p {
-  color: #aaa;
+  color: #d0d0d0;
   font-size: 13px;
   line-height: 1.4;
   min-height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.galeria {
-  background: #0b0b0b;
 }
 
 .fotos {
@@ -189,14 +207,10 @@ h2 {
   border-radius: 16px;
 }
 
-.sobre {
-  background: #080808;
-}
-
 .sobre p {
   max-width: 430px;
   margin: 0 auto;
-  color: #ccc;
+  color: #e4e4e4;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -211,8 +225,8 @@ h2 {
   display: block;
   text-decoration: none;
   color: white;
-  background: #151515;
-  border: 1px solid #292929;
+  background: #222;
+  border: 1px solid #3a3a3a;
   border-radius: 18px;
   overflow: hidden;
 }
@@ -234,32 +248,30 @@ h2 {
 }
 
 .unidade-card i {
-  color: #df0000;
+  color: #ff1f1f;
   margin-right: 6px;
 }
 
 .unidade-card p {
-  color: #aaa;
+  color: #cfcfcf;
   font-size: 13px;
 }
 
-
 /* CELULAR */
 @media (max-width: 768px) {
- .hero {
-  min-height: 100vh;
-  padding: 24px 20px 35px;
-  background:
-    linear-gradient(90deg, rgba(0,0,0,0.15), rgba(0,0,0,0.10)),
-    url("hero-cliente.png");
+  .hero {
+    min-height: 100vh;
+    padding: 24px 20px 35px;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.18), rgba(0,0,0,0.08)),
+      url("hero-cliente.png");
+    background-size: 120%;
+    background-position: center top;
+    justify-content: flex-end;
+    overflow: visible;
+    margin-bottom: 60px;
+  }
 
-  background-size: 135%;
-  background-position: 50% 30%;
-  justify-content: flex-end;
-
-  overflow: visible;
-  margin-bottom: 60px;
-}
   .topo {
     margin-bottom: 0;
   }
@@ -268,39 +280,34 @@ h2 {
     width: 95px;
   }
 
- .conteudo {
-  max-width: 100%;
-  margin-bottom: 0;
-  transform: translateY(80px);
-  position: relative;
-  z-index: 10;
-}
+  .conteudo {
+    max-width: 100%;
+    margin-bottom: 0;
+    transform: translateY(80px);
+    position: relative;
+    z-index: 10;
+  }
 
-
-
-.conteudo span {
-  color: #ff0000;
-  font-weight: 900;
-  letter-spacing: 3px;
-
-  text-shadow:
-    0 4px 8px rgba(0,0,0,0.9),
-    0 8px 16px rgba(0,0,0,0.8),
-    0 12px 24px rgba(0,0,0,0.7);
-}
+  .conteudo span {
+    color: #ff1f1f;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow:
+      0 4px 8px rgba(0,0,0,0.8),
+      0 8px 16px rgba(0,0,0,0.65);
+  }
 
   .conteudo h1 {
     font-size: 28px;
     line-height: 1.05;
     margin: 6px 0 10px;
     max-width: 100%;
-      text-shadow:0 0 80px rgba(0,0,0,9);
+    text-shadow: 0 5px 25px rgba(0,0,0,0.85);
   }
 
   .conteudo p {
     font-size: 14px;
     line-height: 1.45;
-    margin-top: 0;
     margin-bottom: 16px;
   }
 
@@ -326,11 +333,13 @@ h2 {
   .galeria,
   .sobre,
   .unidades {
-    padding: 42px 18px 42px;
+    padding: 42px 18px;
   }
-   .servicos {
+
+  .servicos {
     margin-top: 10px;
   }
+
   .grid {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
